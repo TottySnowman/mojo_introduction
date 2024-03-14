@@ -1,0 +1,8 @@
+fn main():
+    var number:Int = -1
+    if number == 100:
+        print("Number is 100")
+    elif number < 0:
+        print("Number is smaller than 0")
+    else:
+        print("Number is not 100")

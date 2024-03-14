@@ -1,0 +1,11 @@
+fn main():
+    #Basic Foor loop
+    for i in range(10):
+        print(i)
+    
+    #Basic while loop
+    var x:Int = 10
+    while(x > 1):
+        print(x)
+        x -= 1
+        #break available

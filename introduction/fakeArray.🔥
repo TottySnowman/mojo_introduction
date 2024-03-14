@@ -1,0 +1,8 @@
+from python import PythonObject
+
+fn main() raises:
+    var fakeArray:PythonObject = [2,4,6,8,10]
+    print("this is the second number in the 'Array: '", fakeArray[1])
+
+    for i in range(fakeArray.__len__()):
+        print("Numbers: ", fakeArray[i] )

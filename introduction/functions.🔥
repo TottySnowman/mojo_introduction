@@ -1,0 +1,17 @@
+fn main():
+    var a:Int = 10
+    var b:Int = 20
+    var res = addNumbers(a,b)
+    
+    #Parameters can also be called with the Keywords
+    var res2 = addNumberDefault(a=20, b = 20)
+
+    print('Result is: ', res)
+    print("Second result is: ", res2)
+#Normal function
+fn addNumbers(a:Int, b:Int) -> Int:
+    return a + b
+
+#A is default to 10 so it's optional
+fn addNumberDefault(b:Int, a:Int = 10 ) -> Int:
+    return addNumbers(a, b)
