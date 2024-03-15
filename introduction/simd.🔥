@@ -1,0 +1,10 @@
+#This function gets called for each element in the SIMD in one CPU operation
+fn testing[datatype:DType, Length:Int](a:SIMD[datatype, Length], b:SIMD[datatype, Length]) -> SIMD[datatype, Length]:
+    return a * b
+
+fn main():
+    var simdVar = SIMD[DType.float32, 4](2,1,4,5)
+    print(simdVar*2) #Multiplies the whole SIMD
+
+    print(testing(simdVar, simdVar))
+    print(len(simdVar))
