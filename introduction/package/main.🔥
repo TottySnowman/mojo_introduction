@@ -1,0 +1,7 @@
+from testpack import Banana
+
+fn main():
+    var bana = Banana(True, 5.0, "Yellow")
+    print(bana.getRype())
+    print(bana.getLength())
+    print(bana.getColor())

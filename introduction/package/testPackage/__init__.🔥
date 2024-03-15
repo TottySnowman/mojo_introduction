@@ -1,0 +1,2 @@
+#Not needed but simplifies the import 
+from .myModule import Banana

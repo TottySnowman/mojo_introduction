@@ -1,0 +1,22 @@
+#Packages can be built with 
+    # mojo package <packageName> -o <outputName>.mojopkg
+    #NOTE: __init__.mojo is important!
+    
+struct Banana:
+    var Rype:Bool
+    var Length: Float32
+    var Color:String
+
+    fn __init__(inout self, Rype:Bool, Length:Float32, Color:String):
+        self.Rype = Rype
+        self.Length = Length
+        self.Color = Color
+
+    fn getRype(self) -> Bool:
+        return self.Rype
+
+    fn getLength(self) -> Float32:
+        return self.Length
+    
+    fn getColor(self) -> String:
+        return self.Color
