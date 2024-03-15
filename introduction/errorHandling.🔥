@@ -1,0 +1,7 @@
+fn main() raises:
+    try:
+        print("Try block")
+    except:
+        raise Error("Message ")
+    finally:
+        print("Final block")

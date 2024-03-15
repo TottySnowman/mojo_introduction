@@ -1,0 +1,26 @@
+fn main():
+    var a:Int = 3
+    var res = addNumberAndModify(a,3)
+    print("New A Value: ",a)
+
+    var a2:Int = 5
+    var res2 = addNumberOwned(a2, 10)
+    print(res)
+    print("Result 2: ",res2)
+    print("New Value of A2: ", a2) #A2 is still 5 eventho it got changed in function
+
+#inout test = function can modify the importing variable
+fn addNumberAndModify(inout a:Int, b: Int) -> Int:
+    a = 10
+    return a+b
+
+#borrowed example = function cannot modify the importing variable
+fn addNumberBorrowed(borrowed a:Int, b:Int) -> Int:
+    #a = 100 Doesn't work since a is not mutable
+    return a + b
+
+#Owned the variable stays changed in the function and doesn't get mutated
+fn addNumberOwned(owned a:Int, owned b:Int) -> Int:
+    a = 20
+    return a+b
+
